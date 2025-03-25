@@ -6,5 +6,5 @@ curl -fsS https://raw.githubusercontent.com/bfoujols/db-docker/refs/heads/main/c
 ```
 Add file docker config MariaDB
 ```
-curl -fsS  https://raw.githubusercontent.com/bfoujols/db-docker/refs/heads/main/compose-mysql.yml > compose.yml
+curl -fsS  https://raw.githubusercontent.com/bfoujols/db-docker/refs/heads/main/compose-mariadb.yml > compose.yml
 ```
