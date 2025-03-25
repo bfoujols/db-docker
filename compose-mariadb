@@ -1,0 +1,18 @@
+services:
+  db:
+    container_name: pdo-mariadb
+    image: mariadb:latest
+    platform: linux/amd64
+    ports:
+      - "8036:3306"
+    restart: always
+    environment:
+      MYSQL_DATABASE: app_db
+      #MYSQL_ALLOW_EMPTY_PASSWORD: 'yes'
+      MYSQL_ROOT_PASSWORD: admin
+    #      MYSQL_USER: yoo
+    #      MYSQL_PASSWORD: yoo
+    volumes:
+      - ./dbdata:/var/lib/mysql
+volumes:
+  dbdata:
